@@ -44,30 +44,30 @@
             tabindex="0"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
-            <li><a>About</a></li>
+            <li><a href="#about-section">About</a></li>
             <li>
               <a>Courses</a>
               <ul class="p-2">
                 <li>
-                  <a
+                  <a href="#ielts-card"
                     >IELTS Course <i class="text-gray-500 fa-solid fa-play"></i
                   ></a>
                 </li>
                 <li>
-                  <a
+                  <a href="#speaking-card"
                     >Speaking Course
                     <i class="text-gray-500 fa-solid fa-play"></i
                   ></a>
                 </li>
                 <li>
-                  <a
+                  <a href="#mock-card"
                     >Mock Test <i class="text-gray-500 fa-solid fa-play"></i
                   ></a>
                 </li>
               </ul>
             </li>
-            <li><a>Gallery</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#gallery-section">Gallery</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl">
@@ -81,22 +81,22 @@
       </div>
       <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a>About</a></li>
+          <li><a href="#about-section">About</a></li>
           <li>
             <details>
               <summary>Courses</summary>
               <ul class="p-2">
                 <li>
-                  <a
+                  <a href="#ielts-card"
                     >IELTS Course <i class="text-gray-500 fa-solid fa-play"></i
                   ></a>
                 </li>
                 <li>
-                  <a
+                  <a href="#speaking-card"
                     >Speaking Course
                     <i class="text-gray-500 fa-solid fa-play"></i
                   ></a>
-                  <a
+                  <a href="#mock-card"
                     >Mock Test
                     <i class="text-gray-500 text-sm fa-solid fa-play"></i
                   ></a>
@@ -104,14 +104,15 @@
               </ul>
             </details>
           </li>
-          <li><a>Gallery</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#gallery-section">Gallery</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </div>
     </div>
 
     <!-- hero section -->
     <div
+      id="hero-section"
       class="hero w-full min-h-screen bg-[url(images/america.jpg)] bg-left lg:bg-no-repeat lg:bg-cover lg:bg-center"
     >
       <div class="hero-overlay"></div>
@@ -138,7 +139,7 @@
       </div>
     </div>
     <!-- about section -->
-    <div class="px-[50px] mt-[100px] mb-[100px]">
+    <div id="about-section" class="px-[50px] mt-[100px] mb-[100px]">
       <div class="mb-[20px] md:flex gap-[200px] justify-center items-center">
         <div class="lg:w-[700px] mb-[20px] md:mb-[0]">
           <h1 class="mb-5 text-5xl ubuntu text-left">About the Academy</h1>
@@ -229,7 +230,7 @@
     </div>
 
     <!-- courses and pricing section -->
-    <div>
+    <div class="pricing-section">
       <div
         class="mb-[20px] md:mb-[50px] px-[20px] lg:px-[55px] md:flex justify-between"
       >
@@ -240,7 +241,10 @@
       </div>
 
       <div class="lg:flex justify-center gap-[140px]">
-        <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+        <div
+          id="ielts-card"
+          class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm"
+        >
           <div class="card-body">
             <span class="badge badge-xs badge-warning">Most Popular</span>
             <div class="flex justify-between">
@@ -358,7 +362,10 @@
             </div>
           </div>
         </div>
-        <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+        <div
+          id="speaking-card"
+          class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm"
+        >
           <div class="card-body">
             <span class="badge badge-xs badge-warning">Only Speaking</span>
             <div class="flex justify-between">
@@ -483,7 +490,10 @@
             </div>
           </div>
         </div>
-        <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+        <div
+          id="mock-card"
+          class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm"
+        >
           <div class="card-body">
             <span class="badge badge-xs badge-warning">Evaluate Yourself</span>
             <div class="flex justify-between">
@@ -735,7 +745,10 @@
     </div>
 
     <!-- gallery -->
-    <div class="w-[350px] mx-auto lg:w-[1400px] mt-[100px]">
+    <div
+      id="gallery-section"
+      class="w-[350px] mx-auto lg:w-[1400px] mt-[100px]"
+    >
       <h1 class="text-3xl lg:text-5xl ubuntu font-bold text-center mb-[50px]">
         First Ever Seminar in Dohar, Nawabganj
       </h1>
@@ -780,14 +793,14 @@
     </div>
 
     <!-- contact us -->
-    <div class="mt-[100px] ubuntu glass p-4">
+    <div id="contact-section" class="mt-[100px] glass p-4">
       <div class="lg:grid grid-cols-2 gap-[20px] pl-[20px] pr-[20px]">
         <div>
           <h1 class="mb-5 text-3xl lg:text-5xl ubuntu mt-[50px] pl-[20px]">
             Contact Us
           </h1>
           <p class="pl-[20px]">Visit us or send a message — we reply fast.</p>
-          <div class="mt-4 glass p-4 shadow-xl">
+          <div class="mt-4 glass poppins p-4 shadow-xl">
             <p class="text-xs md:text-base font-semibold md:font-normal">
               <i
                 class="text-red-600 fa-solid fa-location-dot"
@@ -880,7 +893,7 @@
     </div>
 
     <!-- footer -->
-    <div class="bg-black text-white lg:mt-[50px] mt-[20px]">
+    <div id="footer-section" class="bg-black text-white lg:mt-[50px] mt-[20px]">
       <footer
         class="footer footer-horizontal footer-center bg-black text-white rounded p-10"
       >
