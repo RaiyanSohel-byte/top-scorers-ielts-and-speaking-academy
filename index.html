@@ -745,12 +745,94 @@
     </div>
 
     <!-- contact us -->
-    <div class="mt-4 glass p-4">
-      <h1 class="mb-5 text-3xl lg:text-5xl ubuntu mt-[50px] pl-[20px]">
-        Contact Us
-      </h1>
-      <p class="pl-[20px]">Visit us or send a message — we reply fast.</p>
-      <div></div>
+    <div class="mt-[200px] glass p-4">
+      <div class="lg:grid grid-cols-2 gap-[20px] pl-[20px] pr-[20px]">
+        <div>
+          <h1 class="mb-5 text-3xl lg:text-5xl ubuntu mt-[50px] pl-[20px]">
+            Contact Us
+          </h1>
+          <p class="pl-[20px]">Visit us or send a message — we reply fast.</p>
+          <div class="mt-4 glass p-4 shadow-xl">
+            <p>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 54-58,
+              Zila parisad market (old), Nawabganj., Dhaka, Bangladesh
+            </p>
+            <p class="mt-2">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:topscorersieltsacademy@gmail.com"
+                >topscorersieltsacademy@gmail.com</a
+              >
+            </p>
+            <p class="mt-2">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <a href="https://wa.me/+88001732066129" target="_blank"
+                >WhatsApp</a
+              >
+            </p>
+            <p class="mt-2">
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+              <a
+                href="https://www.facebook.com/share/16f2MjDQy5/?mibextid=wwXIfr"
+                target="_blank"
+                >Facebook Page</a
+              >
+            </p>
+          </div>
+        </div>
+        <div>
+          <form
+            id="contact-form"
+            class="mt-4 space-y-3 glass p-4 shadow-xl"
+            onsubmit="event.preventDefault(); handleContactSubmit();"
+          >
+            <div>
+              <label class="text-sm text-black">Full name</label>
+              <input
+                id="c_name"
+                required=""
+                class="w-full mt-1 p-3 rounded bg-transparent border border-black bg-opacity-6"
+                placeholder="Your full name"
+              />
+            </div>
+            <div>
+              <label class="text-sm text-black">Email</label>
+              <input
+                id="c_email"
+                type="email"
+                required=""
+                class="w-full mt-1 p-3 rounded bg-transparent border border-black bg-opacity-6"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div>
+              <label class="text-sm text-black">Message</label>
+              <textarea
+                id="c_message"
+                rows="4"
+                required=""
+                class="w-full mt-1 p-3 rounded bg-transparent border border-black bg-opacity-6"
+                placeholder="How can we help?"
+              ></textarea>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+              <button
+                type="button"
+                class="btn bg-black text-white bg-opacity-6"
+                onclick="document.getElementById('contact-form').reset();"
+              >
+                Reset
+              </button>
+            </div>
+            <div id="contact-alert" class="text-sm text-green-300 hidden">
+              Thanks — we will contact you soon.
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
