@@ -148,7 +148,7 @@
           </p>
           <div class="mt-8 grid grid-cols-3 gap-3 max-w-sm text-sm">
             <div class="glass p-3 text-center">
-              <div class="text-2xl font-bold">+250</div>
+              <div class="text-2xl font-bold">+90</div>
               <div class="text-black text-xs">Students coached</div>
             </div>
             <div class="glass p-3 text-center">
@@ -719,42 +719,49 @@
         </div> -->
       </div>
     </div>
+
     <!-- gallery -->
-    <div
-      class="w-[350px] mx-auto h-48 sm:h-64 md:h-96 lg:w-[1400px] auto mt-[50px]"
-    >
-      <h1 class="mb-5 text-3xl lg:text-5xl font-bold text-left">Gallery</h1>
-      <div class="carousel w-full overflow-hidden">
-        <div id="item1" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            class="w-full"
-          />
-        </div>
-        <div id="item2" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            class="w-full"
-          />
-        </div>
-        <div id="item3" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            class="w-full"
-          />
-        </div>
-        <div id="item4" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            class="w-full"
-          />
+    <div class="w-[350px] mx-auto lg:w-[1400px] mt-[100px]">
+      <h1 class="text-3xl lg:text-5xl ubuntu font-bold text-center mb-[50px]">
+        First Ever Seminar in Dohar, Nawabganj
+      </h1>
+
+      <!-- wrapper with fixed height & hidden overflow -->
+      <div class="relative h-48 sm:h-64 md:h-96 overflow-hidden">
+        <div id="gallery" class="carousel w-full h-full">
+          <div id="item1" class="carousel-item w-full rounded-xl">
+            <img
+              src="images/seminar1.jpg"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div id="item2" class="carousel-item w-full rounded-xl">
+            <img
+              src="images/seminar2.jpg"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div id="item3" class="carousel-item w-full rounded-xl">
+            <img
+              src="images/seminar3.jpg"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div id="item4" class="carousel-item w-full rounded-xl">
+            <img
+              src="images/seminar4.jpg"
+              class="w-full h-full object-contain"
+            />
+          </div>
         </div>
       </div>
+
+      <!-- number controls -->
       <div class="flex w-full justify-center gap-2 py-2">
-        <a href="#item1" class="btn btn-xs">1</a>
-        <a href="#item2" class="btn btn-xs">2</a>
-        <a href="#item3" class="btn btn-xs">3</a>
-        <a href="#item4" class="btn btn-xs">4</a>
+        <button class="btn btn-xs" data-slide-to="item1">1</button>
+        <button class="btn btn-xs" data-slide-to="item2">2</button>
+        <button class="btn btn-xs" data-slide-to="item3">3</button>
+        <button class="btn btn-xs" data-slide-to="item4">4</button>
       </div>
     </div>
 
@@ -850,7 +857,7 @@
     </div>
 
     <!-- footer -->
-    <div class="bg-black text-white">
+    <div class="bg-black text-white lg:mt-[50px] mt-[20px]">
       <footer
         class="footer footer-horizontal footer-center bg-black text-white rounded p-10"
       >
@@ -911,5 +918,20 @@
         </aside>
       </footer>
     </div>
+
+    <script>
+      // Smoothly scroll the carousel item into view without moving the page vertically
+      document.querySelectorAll("[data-slide-to]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const el = document.getElementById(btn.dataset.slideTo);
+          if (el)
+            el.scrollIntoView({
+              behavior: "smooth",
+              inline: "center",
+              block: "nearest",
+            });
+        });
+      });
+    </script>
   </body>
 </html>
