@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/050fdada3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Top Scorers' IELTS & Speaking Academy</title>
+  </head>
+  <body class="poppins pt-16 bg-[#f7f7f7]">
+    <!-- nav bar -->
+    <div class="navbar bg-[#f7f7f7] shadow-sm fixed top-0 left-0 w-full z-50">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost pr-0 lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>About</a></li>
+            <li>
+              <a>Courses</a>
+              <ul class="p-2">
+                <li>
+                  <a
+                    >IELTS Course <i class="text-gray-500 fa-solid fa-play"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    >Speaking Course
+                    <i class="text-gray-500 fa-solid fa-play"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    >Mock Test <i class="text-gray-500 fa-solid fa-play"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li><a>Instructors</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">
+          <p class="lato text-[17px] lg:text-2xl max-w-[300px] lg:max-w-full">
+            <span class="lg:text-2xl lobster text-[#20206f]">Top Scorers' </span> &nbsp;IELTS &
+            Speaking Academy
+          </p>
+        </a>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>About</a></li>
+          <li>
+            <details>
+              <summary>Courses</summary>
+              <ul class="p-2">
+                <li>
+                  <a
+                    >IELTS Course <i class="text-gray-500 fa-solid fa-play"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    >Speaking Course
+                    <i class="text-gray-500 fa-solid fa-play"></i
+                  ></a>
+                  <a
+                    >Mock Test
+                    <i class="text-gray-500 text-sm fa-solid fa-play"></i
+                  ></a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Instructors</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <div
+      class="hero w-full min-h-screen bg-[url(images/america.jpg)] bg-left lg:bg-no-repeat lg:bg-cover lg:bg-center"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl garamond">
+            Achieve Your Dream
+            <span class="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+              >IELTS</span
+            >
+            Score!!
+          </h1>
+          <p class="mb-5 ubuntu text-lg">
+            Be a
+            <span
+              class="text-white text-xl drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] garamond font-extrabold"
+              >TOP SCORER</span
+            >
+            with expert mentors, targeted practice and personalized strategies.
+            Small classes, proven methods, real results.
+          </p>
+          <!-- <button class="btn btn-primary">Get Started</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="px-[50px] ">
+      <div class="lg:w-[500px] mb-[20px]">
+        <h1 class="mb-5 text-3xl ubuntu text-left mt-[50px]">
+          About the Academy
+        </h1>
+        <p class="text-sm">
+          Top Scorers' is built by exam-focused tutors who understand the IELTS
+          test inside out. We combine exam-style practice with fluency-building
+          and confidence training.
+        </p>
+      </div>
+      <div class="card-container text-black lg:grid grid-cols-3 gap-[10px]">
+        <div class="card bg-base-100 shadow-lg mb-[20px]  lg:w-full">
+          <div class="card-body">
+            <h2 class="card-title">
+              Mission <i class="fa-solid fa-bullseye"></i>
+            </h2>
+            <p>
+              Empower learners with skills and confidence to hit their target
+              band and succeed globally.
+            </p>
+            <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-lg mb-[20px]  lg:w-full">
+          <div class="card-body">
+            <h2 class="card-title">
+              Our Approach <i class="fa-solid fa-chess"></i>
+            </h2>
+            <p>
+              Personalized study plans, continuous feedback and small class
+              sizes for focused progress.
+            </p>
+            <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-lg mb-[20px]  lg:w-full">
+          <div class="card-body">
+            <h2 class="card-title">
+              Vision <i class="fa-solid fa-binoculars"></i></i>
+            </h2>
+            <p>
+              Be the most trusted local IELTS academy known for measurable
+              results.
+            </p>
+            <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
