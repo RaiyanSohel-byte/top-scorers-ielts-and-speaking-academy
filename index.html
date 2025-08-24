@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="style.css" />
     <title>Top Scorers' IELTS & Speaking Academy</title>
   </head>
-  <body class="poppins pt-16 bg-[#f7f7f7]">
+  <body class="poppins pt-16 bg-gradient-to-r from-white to-blue-100">
     <!-- nav bar -->
-    <div class="navbar bg-[#f7f7f7] shadow-sm fixed top-0 left-0 w-full z-50">
+    <div
+      class="navbar rounded-b-2xl shadow-md bg-gradient-to-r from-white to-blue-50 fixed top-0 left-0 w-full z-50"
+    >
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost pr-0 lg:hidden">
@@ -63,14 +65,16 @@
                 </li>
               </ul>
             </li>
-            <li><a>Instructors</a></li>
+            <li><a>Gallery</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl">
           <p class="lato text-[17px] lg:text-2xl max-w-[300px] lg:max-w-full">
-            <span class="lg:text-2xl lobster text-[#20206f]">Top Scorers' </span> &nbsp;IELTS &
-            Speaking Academy
+            <span class="lg:text-2xl lobster text-[#20206f]"
+              >Top Scorers'
+            </span>
+            &nbsp;IELTS & Speaking Academy
           </p>
         </a>
       </div>
@@ -99,7 +103,7 @@
               </ul>
             </details>
           </li>
-          <li><a>Instructors</a></li>
+          <li><a>Gallery</a></li>
           <li><a>Contact</a></li>
         </ul>
       </div>
@@ -132,22 +136,28 @@
         </div>
       </div>
     </div>
-    <!-- main -->
-    <div class="px-[50px] ">
-      <div class="lg:w-[500px] mb-[20px]">
-        <h1 class="mb-5 text-3xl ubuntu text-left mt-[50px]">
-          About the Academy
-        </h1>
-        <p class="text-sm">
-          Top Scorers' is built by exam-focused tutors who understand the IELTS
-          test inside out. We combine exam-style practice with fluency-building
-          and confidence training.
-        </p>
+    <!-- about section -->
+    <div class="px-[50px] mt-[100px] mb-[100px]">
+      <div class="mb-[20px] md:flex gap-[200px] items-center">
+        <div class="lg:w-[700px] mb-[20px] md:mb-[0]">
+          <h1 class="mb-5 text-5xl ubuntu text-left">About the Academy</h1>
+          <p class="text-lg">
+            Top Scorers' is built by exam-focused tutors who understand the
+            IELTS test inside out. We combine exam-style practice with
+            fluency-building and confidence training.
+          </p>
+        </div>
+
+        <div>
+          <img class="mask mask-squircle w-[500px]" src="images/student.jpg" />
+        </div>
       </div>
-      <div class="card-container text-black lg:grid grid-cols-3 gap-[10px]">
-        <div class="card bg-base-100 shadow-lg mb-[20px]  lg:w-full">
+      <div
+        class="card-container text-black lg:flex justify-center items-center gap-[10px]"
+      >
+        <div class="card bg-base-100 shadow-lg mb-[20px] lg:w-full">
           <div class="card-body">
-            <h2 class="card-title">
+            <h2 class="card-title text-2xl">
               Mission <i class="fa-solid fa-bullseye"></i>
             </h2>
             <p>
@@ -159,9 +169,9 @@
             </div> -->
           </div>
         </div>
-        <div class="card bg-base-100 shadow-lg mb-[20px]  lg:w-full">
+        <div class="card bg-base-100 shadow-lg mb-[20px] lg:w-full">
           <div class="card-body">
-            <h2 class="card-title">
+            <h2 class="card-title text-2xl">
               Our Approach <i class="fa-solid fa-chess"></i>
             </h2>
             <p>
@@ -173,10 +183,10 @@
             </div> -->
           </div>
         </div>
-        <div class="card bg-base-100 shadow-lg mb-[20px]  lg:w-full">
+        <div class="card bg-base-100 shadow-lg mb-[20px] lg:w-full">
           <div class="card-body">
-            <h2 class="card-title">
-              Vision <i class="fa-solid fa-binoculars"></i></i>
+            <h2 class="card-title text-2xl">
+              Vision <i class="fa-solid fa-binoculars"></i>
             </h2>
             <p>
               Be the most trusted local IELTS academy known for measurable
@@ -187,6 +197,506 @@
             </div> -->
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- courses and pricing section -->
+    <div>
+      <div
+        class="mb-[20px] md:mb-[50px] px-[20px] lg:px-[55px] md:flex justify-between"
+      >
+        <h1 class="mb-5 text-3xl lg:text-5xl ubuntu text-left">
+          Courses & Pricing
+        </h1>
+        <p class="text-lg">Flexible schedules • Batch discounts</p>
+      </div>
+
+      <div class="md:flex justify-center gap-[140px]">
+        <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+          <div class="card-body">
+            <span class="badge badge-xs badge-warning">Most Popular</span>
+            <div class="flex justify-between">
+              <h2 class="text-3xl font-bold">IELTS Course</h2>
+              <span class="text-xl"> ৳14000/3mo</span>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Complete IELTS Syllabus Coverage</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Expert Instructors with IELTS Experience</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Weekly Mock Tests & Practice Exams</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Free Lecture Notes & Exercise Sheet</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Listening Practice with Real Exam Materials</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Speaking Practice & One-to-One Sessions</span>
+              </li>
+            </ul>
+            <div class="mt-6">
+              <button class="btn btn-primary btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+          <div class="card-body">
+            <span class="badge badge-xs badge-warning">Only Speaking</span>
+            <div class="flex justify-between">
+              <h2 class="text-3xl font-bold">Speaking</h2>
+              <span class="text-xl"> ৳6000/3mo</span>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Speaking Practice & One-to-One Sessions</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Expert Instructors with IELTS Experience</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Speaking Mock Tests & Practice Exams</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Complete IELTS Syllabus Coverage</span
+                >
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Free Lecture Notes & Exercise Sheet</span
+                >
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Listening Practice with Real Exam Materials</span
+                >
+              </li>
+            </ul>
+            <div class="mt-6">
+              <button class="btn btn-primary btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+          <div class="card-body">
+            <span class="badge badge-xs badge-warning">Evaluate Yourself</span>
+            <div class="flex justify-between">
+              <h2 class="text-3xl font-bold">Mock Test</h2>
+              <span class="text-xl"> ৳1000/1mo</span>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Weekly Mock Tests & Practice Exams</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Expert Instructors with IELTS Experience</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Free Lecture Notes & Exercise Sheet</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Complete IELTS Syllabus Coverage</span
+                >
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Listening Practice with Real Exam Materials</span
+                >
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Speaking Practice & One-to-One Sessions</span
+                >
+              </li>
+            </ul>
+            <div class="mt-6">
+              <button class="btn btn-primary btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card lg:w-96 mb-[20px] bg-base-100 shadow-sm">
+          <div class="card-body">
+            <span class="badge badge-xs badge-warning">Only Speaking</span>
+            <div class="flex justify-between">
+              <h2 class="text-3xl font-bold">Mock Test</h2>
+              <span class="text-xl"> ৳1000/1mo</span>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Speaking Practice & One-to-One Sessions</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Expert Instructors with IELTS Experience</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Speaking Mock Tests & Practice Exams</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Complete IELTS Syllabus Coverage</span
+                >
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Free Lecture Notes & Exercise Sheet</span
+                >
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="line-through"
+                  >Listening Practice with Real Exam Materials</span
+                >
+              </li>
+            </ul>
+            <div class="mt-6">
+              <button class="btn btn-primary btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </body>
